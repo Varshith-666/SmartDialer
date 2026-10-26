@@ -1,0 +1,108 @@
+{
+  "A": {
+    "scenario": "SCENARIO_A",
+    "input_parameters": {
+      "configured_answer_rate": 0.2,
+      "configured_talk_time_sec": 120.0,
+      "provider_type": "reliable",
+      "provider_failure_rate": 0.05,
+      "dynamic_shift": false,
+      "total_agents": 50,
+      "cycles_run": 5
+    },
+    "metrics": {
+      "calls_initiated": 500,
+      "calls_answered": 89,
+      "calls_connected": 0,
+      "calls_completed": 89,
+      "calls_failed": 411,
+      "realized_answer_rate_pct": 17.8,
+      "total_proposed_calls": 901,
+      "total_approved_calls": 500,
+      "safety_decisions": {
+        "APPROVE": 2,
+        "REDUCE": 3
+      },
+      "agent_utilization_estimate_pct": 17.8
+    }
+  },
+  "B": {
+    "scenario": "SCENARIO_B",
+    "input_parameters": {
+      "configured_answer_rate": 0.5,
+      "configured_talk_time_sec": 90.0,
+      "provider_type": "reliable",
+      "provider_failure_rate": 0.05,
+      "dynamic_shift": false,
+      "total_agents": 50,
+      "cycles_run": 5
+    },
+    "metrics": {
+      "calls_initiated": 500,
+      "calls_answered": 241,
+      "calls_connected": 0,
+      "calls_completed": 241,
+      "calls_failed": 259,
+      "realized_answer_rate_pct": 48.2,
+      "total_proposed_calls": 500,
+      "total_approved_calls": 500,
+      "safety_decisions": {
+        "APPROVE": 5
+      },
+      "agent_utilization_estimate_pct": 36.15
+    }
+  },
+  "C": {
+    "scenario": "SCENARIO_C",
+    "input_parameters": {
+      "configured_answer_rate": 0.7,
+      "configured_talk_time_sec": 180.0,
+      "provider_type": "reliable",
+      "provider_failure_rate": 0.05,
+      "dynamic_shift": false,
+      "total_agents": 50,
+      "cycles_run": 5
+    },
+    "metrics": {
+      "calls_initiated": 375,
+      "calls_answered": 254,
+      "calls_connected": 0,
+      "calls_completed": 254,
+      "calls_failed": 121,
+      "realized_answer_rate_pct": 67.73,
+      "total_proposed_calls": 375,
+      "total_approved_calls": 375,
+      "safety_decisions": {
+        "APPROVE": 5
+      },
+      "agent_utilization_estimate_pct": 100.0
+    }
+  },
+  "D": {
+    "scenario": "SCENARIO_D",
+    "input_parameters": {
+      "configured_answer_rate": 0.7,
+      "configured_talk_time_sec": 180.0,
+      "provider_type": "chaotic",
+      "provider_failure_rate": 0.15,
+      "dynamic_shift": true,
+      "total_agents": 50,
+      "cycles_run": 8
+    },
+    "metrics": {
+      "calls_initiated": 500,
+      "calls_answered": 382,
+      "calls_connected": 0,
+      "calls_completed": 382,
+      "calls_failed": 118,
+      "realized_answer_rate_pct": 76.4,
+      "total_proposed_calls": 575,
+      "total_approved_calls": 500,
+      "safety_decisions": {
+        "APPROVE": 7,
+        "REDUCE": 1
+      },
+      "agent_utilization_estimate_pct": 100.0
+    }
+  }
+}
